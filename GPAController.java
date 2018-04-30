@@ -54,7 +54,7 @@ public class GPAController implements ActionListener {
             grade += (intGrade[i] * 3); 
         }
         
-        DecimalFormat dmf = new DecimalFormat("#.##"); 
+        DecimalFormat dmf = new DecimalFormat("#.00"); 
         grade = grade/18d;
         calGrade.setText(dmf.format(grade));
     }
